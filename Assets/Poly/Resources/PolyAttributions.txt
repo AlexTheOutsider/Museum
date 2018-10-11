@@ -1,0 +1,55 @@
+This project uses the following items from Poly (http://poly.google.com):
+
+Title: accad table
+Author: Joe Chambers
+URL: https://poly.google.com/view/0a8VQXVe_fN
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Bookshelf
+Author: Wanja Pflüger
+URL: https://poly.google.com/view/15B0ihXkg3C
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Candlestick
+Author: Morgan Hutcherson
+URL: https://poly.google.com/view/8CJ12xNGjyf
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Globe
+Author: Jerad Bitner
+URL: https://poly.google.com/view/df3wqefdefh
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Hylian Shield
+Author: Daniel Bauman
+URL: https://poly.google.com/view/epCyhzBzAig
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: picture frames
+Author: Jeremy Eyring
+URL: https://poly.google.com/view/09J-SKBLGQk
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Silla
+Author: Nicolás Gómez Zuluaga
+URL: https://poly.google.com/view/6PcE3zlscd7
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Spellbook
+Author: Cymon Butler
+URL: https://poly.google.com/view/5yJbX7PcUCH
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Telescope
+Author: Don Carson
+URL: https://poly.google.com/view/3HJCpDzBQEw
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode

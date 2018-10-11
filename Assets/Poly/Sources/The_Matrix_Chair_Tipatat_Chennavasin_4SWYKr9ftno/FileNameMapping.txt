@@ -1,0 +1,3 @@
+textures/chair_baseColor.png -> 0CBE8FBB3ABC08C00D5AA2A5C95E3FCF.png
+textures/chair_normal.png -> 431FFCA5A985329D966BBD8D74776E72.png
+scene.bin -> E0C5CEE43DB1A80C6DEDB94F23180265.bin
