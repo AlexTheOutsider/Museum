@@ -24,6 +24,9 @@ public class InteractiveObject : MonoBehaviour
 		if (distance >= interactiveRange)
 		{
 			OnInteractiveObjExit();
+			
+			if(GetComponent<Rigidbody>().velocity.magnitude < 0.01f)
+				GetComponent<Rigidbody>().isKinematic = true;
 		}
 		
 		if (distance < interactiveRange)
