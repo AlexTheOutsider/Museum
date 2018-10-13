@@ -598,6 +598,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="InteractiveObject.cs" t="Include" />
+          <e p="Rotator.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
