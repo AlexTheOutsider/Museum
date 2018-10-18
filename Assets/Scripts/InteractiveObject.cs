@@ -12,6 +12,7 @@ public class InteractiveObject : MonoBehaviour
 	public float throwForce = 600f;
 	public GameObject tempParent;
 	public Canvas promptText;
+	public GameObject acceptor;
 
 	private void Start()
 	{
@@ -25,8 +26,9 @@ public class InteractiveObject : MonoBehaviour
 		{
 			OnInteractiveObjExit();
 			
-			if(GetComponent<Rigidbody>().velocity.magnitude < 0.01f)
+			if(GetComponent<Rigidbody>().velocity.magnitude < 0.01f){
 				GetComponent<Rigidbody>().isKinematic = true;
+			}
 		}
 		
 		if (distance < interactiveRange)
@@ -60,7 +62,7 @@ public class InteractiveObject : MonoBehaviour
 		promptText.gameObject.SetActive(true);
 	}
 	
-	void OnInteractiveObjExit()
+	public void OnInteractiveObjExit()
 	{
 		promptText.gameObject.SetActive(false);
 	}
@@ -102,6 +104,27 @@ public class InteractiveObject : MonoBehaviour
 					
 				isHolding = false;
 			}
+		}
+	}
+
+	public void EnterAcceptor()
+	{
+		transform.GetComponent<Rigidbody>().isKinematic = false;
+		isHolding = false;
+	}
+	
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.name == acceptor.transform.GetChild(0).name)
+		{
+			Transform acceptorTrigger = acceptor.transform.GetChild(0);
+			
+			//print("Acceptor matched!");
+			transform.SetParent(acceptorTrigger);
+			transform.position = acceptorTrigger.position;
+			transform.rotation = Quaternion.identity;
+			transform.GetComponent<Rigidbody>().isKinematic = false;
+			isHolding = false;
 		}
 	}
 }
