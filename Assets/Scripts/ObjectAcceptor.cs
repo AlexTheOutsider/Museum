@@ -20,7 +20,7 @@ public class ObjectAcceptor : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		print("enter trigger from acceptor!!");
+		//print("enter trigger from acceptor!!");
 		transform.parent.GetComponent<MeshRenderer>().material = activatedMaterial;
 	}
 

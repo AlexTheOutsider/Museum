@@ -23,7 +23,6 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
-        <e p="ObjectAcceptor.cs" t="Include" />
         <e p="Poly" t="Include">
           <e p="Resources" t="Include">
             <e p="PolyAttributions.txt" t="Include" />
@@ -614,7 +613,9 @@
         <e p="Scripts" t="Include">
           <e p="InteractiveObject.cs" t="Include" />
           <e p="Mover.cs" t="Include" />
+          <e p="ObjectAcceptor.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
+          <e p="Teleporter.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">

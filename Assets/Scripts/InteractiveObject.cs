@@ -10,7 +10,7 @@ public class InteractiveObject : MonoBehaviour
 
 	public float interactiveRange = 1f;
 	public float throwForce = 600f;
-	public GameObject tempParent;
+	public GameObject guide;
 	public Canvas promptText;
 	public GameObject acceptor;
 
@@ -21,7 +21,7 @@ public class InteractiveObject : MonoBehaviour
 
 	private void Update ()
 	{
-		distance = Vector3.Distance(transform.position, tempParent.transform.position);
+		distance = Vector3.Distance(transform.position, guide.transform.position);
 		if (distance >= interactiveRange)
 		{
 			OnInteractiveObjExit();
@@ -30,8 +30,7 @@ public class InteractiveObject : MonoBehaviour
 				GetComponent<Rigidbody>().isKinematic = true;
 			}
 		}
-		
-		if (distance < interactiveRange)
+		else
 		{
 			OnInteractiveObjEnter();
 			ContextMenuUpdate();
@@ -40,7 +39,16 @@ public class InteractiveObject : MonoBehaviour
 			Throw();
 		}
 	}
-
+	void OnInteractiveObjEnter()
+	{
+		promptText.gameObject.SetActive(true);
+	}
+	
+	public void OnInteractiveObjExit()
+	{
+		promptText.gameObject.SetActive(false);
+	}
+	
 	void ContextMenuUpdate()
 	{
 		if (isHolding == true)
@@ -57,23 +65,13 @@ public class InteractiveObject : MonoBehaviour
 		}
 	}
 
-	void OnInteractiveObjEnter()
-	{
-		promptText.gameObject.SetActive(true);
-	}
-	
-	public void OnInteractiveObjExit()
-	{
-		promptText.gameObject.SetActive(false);
-	}
-
 	void PickUpAndDrop()
 	{
 		if (Input.GetKeyDown(KeyCode.E))
 		{
 			if (isHolding == false)
 			{
-				transform.SetParent(tempParent.transform);
+				transform.SetParent(guide.transform);
 				transform.GetComponent<Rigidbody>().isKinematic = true;
 				transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
 				transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
@@ -99,18 +97,12 @@ public class InteractiveObject : MonoBehaviour
 				transform.GetComponent<Rigidbody>().isKinematic = false;
 					
 				//transform.parent.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * throwForce);
-				Vector3 direction = transform.position - tempParent.transform.parent.parent.transform.position;
+				Vector3 direction = transform.position - guide.transform.parent.parent.transform.position;
 				transform.GetComponent<Rigidbody>().AddForce(direction * throwForce);
 					
 				isHolding = false;
 			}
 		}
-	}
-
-	public void EnterAcceptor()
-	{
-		transform.GetComponent<Rigidbody>().isKinematic = false;
-		isHolding = false;
 	}
 	
 	private void OnTriggerEnter(Collider other)
