@@ -6,6 +6,7 @@ public class ObjectAcceptor : MonoBehaviour
 {
 	public Material initialMaterial;
 	public Material activatedMaterial;
+	public GameObject activator;
 	// Use this for initialization
 	void Start ()
 	{
@@ -21,11 +22,13 @@ public class ObjectAcceptor : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		//print("enter trigger from acceptor!!");
-		transform.parent.GetComponent<MeshRenderer>().material = activatedMaterial;
+		if(activator.name==other.name)
+			transform.parent.GetComponent<MeshRenderer>().material = activatedMaterial;
 	}
 
 	private void OnTriggerExit(Collider other)
 	{
-		transform.parent.GetComponent<MeshRenderer>().material = initialMaterial;
+		if(activator.name==other.name)
+			transform.parent.GetComponent<MeshRenderer>().material = initialMaterial;
 	}
 }

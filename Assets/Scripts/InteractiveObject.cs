@@ -113,9 +113,10 @@ public class InteractiveObject : MonoBehaviour
 			
 			//print("Acceptor matched!");
 			transform.SetParent(acceptorTrigger);
+			transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
+			transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 			transform.position = acceptorTrigger.position;
 			transform.rotation = Quaternion.identity;
-			transform.GetComponent<Rigidbody>().isKinematic = false;
 			isHolding = false;
 		}
 	}
