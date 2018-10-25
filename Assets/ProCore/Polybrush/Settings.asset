@@ -27,7 +27,11 @@ MonoBehaviour:
   m_Color_keys:
   - z_pref_brushColor
   m_bool_values: 010101000001
+<<<<<<< Updated upstream
   m_int_values: 000000000100000010000000
+=======
+  m_int_values: 01000000
+>>>>>>> Stashed changes
   m_float_values: []
   m_string_values: []
   m_Color_values:
