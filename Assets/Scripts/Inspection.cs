@@ -20,10 +20,12 @@ public class Inspection : MonoBehaviour
 	void Update () {
 		if (Input.GetMouseButtonDown(1))
 		{
+			StopCoroutine("ChangeFOV");
 			StartCoroutine(ChangeFOV(camera.fieldOfView, inspectFOV));
 		}
 		else if (Input.GetMouseButtonUp(1))
 		{
+			StopCoroutine("ChangeFOV");
 			StartCoroutine(ChangeFOV(camera.fieldOfView, normalFOV));
 		}
 	}
@@ -31,7 +33,7 @@ public class Inspection : MonoBehaviour
 	IEnumerator ChangeFOV(float originalFOV, float targetFOV)
 	{
 		float timeAcc = 0;
-		while (timeAcc < zoomInTime)
+		while (timeAcc <= zoomInTime)
 		{
 			timeAcc += Time.deltaTime;
 			camera.fieldOfView = Mathf.Lerp(originalFOV, targetFOV, timeAcc / zoomInTime);

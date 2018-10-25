@@ -8,9 +8,9 @@ public class InteractiveObject : MonoBehaviour
 	private bool isHolding = false;
 	private Transform prevParent;
 
-	public float interactiveRange = 1f;
-	public float throwForce = 600f;
-	public GameObject guide;
+	public float interactiveRange = 2f;
+	public float throwForce = 1000f;
+	public GameObject player;
 	public Canvas promptText;
 	public GameObject acceptor;
 
@@ -21,7 +21,8 @@ public class InteractiveObject : MonoBehaviour
 
 	private void Update ()
 	{
-		distance = Vector3.Distance(transform.position, guide.transform.position);
+		distance = Vector3.Distance(transform.position, player.transform.Find("Guide").position);
+		//print(distance);
 		if (distance >= interactiveRange)
 		{
 			OnInteractiveObjExit();
@@ -32,6 +33,7 @@ public class InteractiveObject : MonoBehaviour
 		}
 		else
 		{
+			//print("within distance");
 			OnInteractiveObjEnter();
 			ContextMenuUpdate();
 			
@@ -51,6 +53,7 @@ public class InteractiveObject : MonoBehaviour
 	
 	void ContextMenuUpdate()
 	{
+		//print(isHolding);
 		if (isHolding == true)
 		{
 			promptText.transform.Find("Pickup").gameObject.SetActive(false);
@@ -71,7 +74,9 @@ public class InteractiveObject : MonoBehaviour
 		{
 			if (isHolding == false)
 			{
-				transform.SetParent(guide.transform);
+				transform.SetParent(player.transform.Find("Guide"));
+				transform.position = player.transform.Find("Pickup").position;
+				transform.rotation = player.transform.Find("Pickup").rotation;
 				transform.GetComponent<Rigidbody>().isKinematic = true;
 				transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
 				transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
@@ -92,13 +97,13 @@ public class InteractiveObject : MonoBehaviour
 		{
 			if (isHolding == true)
 			{
-				Debug.Log("Throw away!");
+				//Debug.Log("Throw away!");
 				transform.SetParent(prevParent);
 				transform.GetComponent<Rigidbody>().isKinematic = false;
 					
 				//transform.parent.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * throwForce);
-				Vector3 direction = transform.position - guide.transform.parent.parent.transform.position;
-				transform.GetComponent<Rigidbody>().AddForce(direction * throwForce);
+				Vector3 direction = player.transform.Find("Aim").position - transform.position;
+				transform.GetComponent<Rigidbody>().AddForce(direction.normalized * throwForce);
 					
 				isHolding = false;
 			}
