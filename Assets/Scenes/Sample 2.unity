@@ -5054,7 +5054,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19424
+  m_Name: pb_Mesh-2824238
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -8723,7 +8723,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19018
+  m_Name: pb_Mesh-2824246
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -11921,7 +11921,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19204
+  m_Name: pb_Mesh-2824244
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -13367,7 +13367,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19338
+  m_Name: pb_Mesh-2824250
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -20363,7 +20363,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19158
+  m_Name: pb_Mesh-2824248
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -21214,7 +21214,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19406
+  m_Name: pb_Mesh-2824240
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -21912,7 +21912,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh19106
+  m_Name: pb_Mesh-2824242
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -24690,15 +24690,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -24747,7 +24747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ea794412a4bc064fb3bbfe1d4866be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptText: {fileID: 0}
 --- !u!43 &2097705662
 Mesh:
   m_ObjectHideFlags: 0
