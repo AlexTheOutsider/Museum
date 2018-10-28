@@ -867,6 +867,48 @@
             </e>
           </e>
         </e>
+        <e p="Yuponic" t="Include">
+          <e p="YuME" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Utils" t="Include">
+                <e p="YuME_brushFunctions.cs" t="Include" />
+                <e p="YuME_customBrushFunctions.cs" t="Include" />
+                <e p="YuME_customBrushNameDialog.cs" t="Include" />
+                <e p="YuME_editorConfig.cs" t="Include" />
+                <e p="YuME_editorSceneUI.cs" t="Include" />
+                <e p="YuME_freezeMap.cs" t="Include" />
+                <e p="YuME_keyboardShortcuts.cs" t="Include" />
+                <e p="YuME_mapManagerFunctions.cs" t="Include" />
+                <e p="YuME_MapManagerUI.cs" t="Include" />
+                <e p="YuME_mouseShorcuts.cs" t="Include" />
+                <e p="YuME_sceneGizmoFunctions.cs" t="Include" />
+                <e p="YuME_swapTilesets.cs" t="Include" />
+                <e p="YuME_tileFunctions.cs" t="Include" />
+                <e p="YuTools_Utils.cs" t="Include" />
+              </e>
+              <e p="YuME_mapEditor.cs" t="Include" />
+              <e p="YuME_tileConverter.cs" t="Include" />
+              <e p="YuME_tileImporter.cs" t="Include" />
+            </e>
+            <e p="Prefab Sampler" t="Include">
+              <e p="Editor" t="Include">
+                <e p="YuME_prefabSampler.cs" t="Include" />
+                <e p="YuME_pSConfig.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="YuME_editorData.cs" t="Include" />
+              <e p="YuME_editorPreferences.cs" t="Include" />
+              <e p="YuME_GizmoGrid.cs" t="Include" />
+              <e p="YuME_importerSettings.cs" t="Include" />
+              <e p="YuME_MapManager.cs" t="Include" />
+              <e p="YuME_prefabSamplerData.cs" t="Include" />
+              <e p="YuME_Preferences.cs" t="Include" />
+              <e p="YuME_tileGizmo.cs" t="Include" />
+              <e p="YuME_tilesetData.cs" t="Include" />
+            </e>
+          </e>
+        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="Museum.sln" t="IncludeFlat" />
