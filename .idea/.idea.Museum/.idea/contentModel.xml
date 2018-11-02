@@ -620,9 +620,11 @@
         <e p="Scripts" t="Include">
           <e p="DisplayCollider.cs" t="Include" />
           <e p="Inspection.cs" t="Include" />
+          <e p="InteractiveDoor.cs" t="Include" />
           <e p="InteractiveObject.cs" t="Include" />
           <e p="Mover.cs" t="Include" />
           <e p="ObjectAcceptor.cs" t="Include" />
+          <e p="OpenProjector.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
           <e p="Teleporter.cs" t="Include" />
         </e>
