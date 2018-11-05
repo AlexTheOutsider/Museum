@@ -31,6 +31,7 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
+        <e p="Piano.cs" t="Include" />
         <e p="Poly" t="Include">
           <e p="Resources" t="Include">
             <e p="PolyAttributions.txt" t="Include" />

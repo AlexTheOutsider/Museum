@@ -64,7 +64,7 @@ public class Inspection : MonoBehaviour
 	
 	void AdjustPerspective()
 	{
-		print("Vector3: " + transform.rotation.eulerAngles);
+		//print("Vector3: " + transform.rotation.eulerAngles);
 		if (Input.GetKey(KeyCode.W))
 		{
 			transform.Rotate(-angularVelocity * Time.deltaTime, 0f, 0f);
@@ -83,7 +83,6 @@ public class Inspection : MonoBehaviour
 					transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
 			}
 		}
-		
 		if (Input.GetKey(KeyCode.A))
 		{
 			transform.Rotate(0f, -angularVelocity * Time.deltaTime, 0f, Space.World);
