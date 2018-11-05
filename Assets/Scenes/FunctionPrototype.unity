@@ -299,12 +299,12 @@ GameObject:
   - component: {fileID: 169433524}
   - component: {fileID: 169433523}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &169433523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1212,7 +1212,7 @@ GameObject:
   - component: {fileID: 833010727}
   - component: {fileID: 833010726}
   m_Layer: 0
-  m_Name: Sphere (3)
+  m_Name: Solar System (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1891,7 +1891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1052269046
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2479,6 +2479,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1936885593553528, guid: 1fa065be2f9ff0642adfeca7bd2eed60, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fa065be2f9ff0642adfeca7bd2eed60, type: 2}
   m_IsPrefabAsset: 0
@@ -2610,7 +2614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1203452813
 Transform:
   m_ObjectHideFlags: 0
@@ -2846,7 +2850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1327139443
 Transform:
   m_ObjectHideFlags: 0
@@ -2873,12 +2877,12 @@ GameObject:
   - component: {fileID: 1414078835}
   - component: {fileID: 1414078834}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Solar System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1414078834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3134,7 +3138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1505962955
 Transform:
   m_ObjectHideFlags: 0
@@ -3492,7 +3496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1675104055
 Transform:
   m_ObjectHideFlags: 0
@@ -3693,7 +3697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1805449132
 Transform:
   m_ObjectHideFlags: 0
@@ -4127,7 +4131,7 @@ GameObject:
   - component: {fileID: 1966258686}
   - component: {fileID: 1966258689}
   m_Layer: 0
-  m_Name: Sphere (2)
+  m_Name: Solar System (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4308,7 +4312,7 @@ GameObject:
   - component: {fileID: 2008680198}
   - component: {fileID: 2008680197}
   m_Layer: 0
-  m_Name: Sphere (4)
+  m_Name: Solar System (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4511,7 +4515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &2055801956
 Light:
   m_ObjectHideFlags: 0
@@ -4575,7 +4579,7 @@ GameObject:
   - component: {fileID: 2098497062}
   - component: {fileID: 2098497065}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Solar System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

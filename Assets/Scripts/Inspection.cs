@@ -64,13 +64,14 @@ public class Inspection : MonoBehaviour
 	
 	void AdjustPerspective()
 	{
+		print("Vector3: " + transform.rotation.eulerAngles);
 		if (Input.GetKey(KeyCode.W))
 		{
 			transform.Rotate(-angularVelocity * Time.deltaTime, 0f, 0f);
 			if (Mathf.Abs( transform.rotation.eulerAngles.x - 340) < 0.1f)
 			{
-				 transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x,
-					 transform.rotation.eulerAngles.y,  340);
+				transform.rotation = Quaternion.Euler(340,
+					transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
 			}
 		}
 		if (Input.GetKey(KeyCode.S))
@@ -78,27 +79,27 @@ public class Inspection : MonoBehaviour
 			transform.Rotate(angularVelocity * Time.deltaTime, 0f, 0f);
 			if (Mathf.Abs( transform.rotation.eulerAngles.x - 20) < 0.1f)
 			{
-				 transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x,
-					 transform.rotation.eulerAngles.y,  20);
+				transform.rotation = Quaternion.Euler(20,
+					transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
 			}
 		}
 		
 		if (Input.GetKey(KeyCode.A))
 		{
 			transform.Rotate(0f, -angularVelocity * Time.deltaTime, 0f, Space.World);
-			if (Mathf.Abs( transform.rotation.eulerAngles.y - 50) < 0.1f)
+			if (Mathf.Abs( transform.rotation.eulerAngles.y - 330) < 0.1f)
 			{
 				 transform.rotation = Quaternion.Euler( transform.rotation.eulerAngles.x,
-					50,  transform.rotation.eulerAngles.z);
+					330,  transform.rotation.eulerAngles.z);
 			}
 		}
 		if (Input.GetKey(KeyCode.D))
 		{
 			transform.Rotate(0f, angularVelocity * Time.deltaTime, 0f, Space.World);
-			if (Mathf.Abs( transform.rotation.eulerAngles.y - 130) < 0.1f)
+			if (Mathf.Abs( transform.rotation.eulerAngles.y - 30) < 0.1f)
 			{
 				transform.rotation = Quaternion.Euler( transform.rotation.eulerAngles.x,
-					130,  transform.rotation.eulerAngles.z);
+					30,  transform.rotation.eulerAngles.z);
 			}
 		}
 	}

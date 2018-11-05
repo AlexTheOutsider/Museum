@@ -78,6 +78,7 @@ public class InteractiveDoor : MonoBehaviour {
 	public void OpenDoorAuto()
 	{
 		animator.SetTrigger("Opening");
+		contextMenu.gameObject.SetActive(false);
 		isDisabled = true;
 	}
 }
