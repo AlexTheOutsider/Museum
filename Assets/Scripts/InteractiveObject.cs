@@ -4,67 +4,67 @@ using UnityEngine;
 
 public class InteractiveObject : MonoBehaviour
 {
+	public float interactiveRange = 2f;
+	public float throwForce = 500f;
+	public Transform acceptor;
+	public InteractiveDoor door;
+	
+	private Transform player;
+	private Transform contextMenu;
+	private Transform prevParent;
+	
 	private float distance;
 	private bool isHolding = false;
-	private Transform prevParent;
-
-	public float interactiveRange = 2f;
-	public float throwForce = 1000f;
-	public GameObject player;
-	public Canvas promptText;
-	public GameObject acceptor;
 
 	private void Start()
 	{
+		player = GameObject.FindWithTag("Player").transform.GetChild(0);
+		contextMenu = transform.Find("ContextMenu");
 		prevParent = transform.parent;
 	}
 
 	private void Update ()
 	{
-		distance = Vector3.Distance(transform.position, player.transform.Find("Guide").position);
-		//print(distance);
+		distance = Vector3.Distance(transform.position, player.Find("Guide").position);
 		if (distance >= interactiveRange)
 		{
 			OnInteractiveObjExit();
-			
 			if(GetComponent<Rigidbody>().velocity.magnitude < 0.01f){
 				GetComponent<Rigidbody>().isKinematic = true;
 			}
 		}
 		else
 		{
-			//print("within distance");
 			OnInteractiveObjEnter();
 			ContextMenuUpdate();
-			
 			PickUpAndDrop();
 			Throw();
 		}
 	}
+	
 	void OnInteractiveObjEnter()
 	{
-		promptText.gameObject.SetActive(true);
+		contextMenu.gameObject.SetActive(true);
 	}
 	
 	public void OnInteractiveObjExit()
 	{
-		promptText.gameObject.SetActive(false);
+		contextMenu.gameObject.SetActive(false);
 	}
 	
 	void ContextMenuUpdate()
 	{
-		//print(isHolding);
 		if (isHolding == true)
 		{
-			promptText.transform.Find("Pickup").gameObject.SetActive(false);
-			promptText.transform.Find("Drop").gameObject.SetActive(true);
-			promptText.transform.Find("Throw").gameObject.SetActive(true);
+			contextMenu.Find("Pickup").gameObject.SetActive(false);
+			contextMenu.Find("Drop").gameObject.SetActive(true);
+			contextMenu.Find("Throw").gameObject.SetActive(true);
 		}
 		else
 		{
-			promptText.transform.Find("Pickup").gameObject.SetActive(true);
-			promptText.transform.Find("Drop").gameObject.SetActive(false);
-			promptText.transform.Find("Throw").gameObject.SetActive(false);
+			contextMenu.Find("Pickup").gameObject.SetActive(true);
+			contextMenu.Find("Drop").gameObject.SetActive(false);
+			contextMenu.Find("Throw").gameObject.SetActive(false);
 		}
 	}
 
@@ -74,18 +74,18 @@ public class InteractiveObject : MonoBehaviour
 		{
 			if (isHolding == false)
 			{
-				transform.SetParent(player.transform.Find("Guide"));
-				transform.position = player.transform.Find("Pickup").position;
-				transform.rotation = player.transform.Find("Pickup").rotation;
-				transform.GetComponent<Rigidbody>().isKinematic = true;
-				transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
-				transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+				transform.SetParent(player.Find("Guide"));
+				transform.position = player.Find("Pickup").position;
+				transform.rotation = player.Find("Pickup").rotation;
+				GetComponent<Rigidbody>().isKinematic = true;
+				GetComponent<Rigidbody>().velocity = Vector3.zero;
+				GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 				isHolding = true;
 			}
 			else
 			{
 				transform.SetParent(prevParent);
-				transform.GetComponent<Rigidbody>().isKinematic = false;
+				GetComponent<Rigidbody>().isKinematic = false;
 				isHolding = false;
 			}
 		}
@@ -97,14 +97,13 @@ public class InteractiveObject : MonoBehaviour
 		{
 			if (isHolding == true)
 			{
-				//Debug.Log("Throw away!");
 				transform.SetParent(prevParent);
-				transform.GetComponent<Rigidbody>().isKinematic = false;
-					
+				GetComponent<Rigidbody>().isKinematic = false;
+				
 				//transform.parent.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * throwForce);
-				Vector3 direction = player.transform.Find("Aim").position - transform.position;
-				transform.GetComponent<Rigidbody>().AddForce(direction.normalized * throwForce);
-					
+				Vector3 direction = player.Find("Aim").position - transform.position;
+				GetComponent<Rigidbody>().AddForce(direction.normalized * throwForce);
+
 				isHolding = false;
 			}
 		}
@@ -112,17 +111,20 @@ public class InteractiveObject : MonoBehaviour
 	
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.name == acceptor.transform.GetChild(0).name)
+		if (other.name == acceptor.GetChild(0).name)
 		{
-			Transform acceptorTrigger = acceptor.transform.GetChild(0);
-			
-			//print("Acceptor matched!");
-			transform.SetParent(acceptorTrigger);
-			transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
-			transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-			transform.position = acceptorTrigger.position;
-			transform.rotation = Quaternion.identity;
+			acceptor.gameObject.SetActive(false);
+
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+			transform.position = acceptor.position;
+			transform.rotation = acceptor.rotation;
+			transform.SetParent(prevParent);
+			GetComponent<Rigidbody>().isKinematic = true;
 			isHolding = false;
+
+			door.isLocked = false;
+			door.OpenDoorAuto();
 		}
 	}
 }

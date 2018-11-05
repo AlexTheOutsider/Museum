@@ -6,16 +6,28 @@ using UnityEngine.UI;
 public class InteractiveDoor : MonoBehaviour {
 
 	public bool isLocked = true;
-	public Canvas contextMenu;
-	public float interactiveRange = 2f;
-	public GameObject player;
-	public Animator animator;
+	public float interactiveRange = 1f;
+	
+	private Transform player;
+	private Transform contextMenu;
+	private Animator animator;
 	
 	private float distance;
+	private bool isDisabled = false;
 
-	void Update () {
-		distance = Vector3.Distance(transform.position, player.transform.Find("Guide").position);
-		//print(distance);
+	void Start()
+	{
+		player = GameObject.FindWithTag("Player").transform.GetChild(0);
+		contextMenu = transform.Find("ContextMenu");
+		animator = transform.parent.GetComponent<Animator>();
+	}
+
+	void Update ()
+	{
+		if (isDisabled)
+			return;
+		
+		distance = Vector3.Distance(transform.position, player.Find("Guide").position);
 		if (distance >= interactiveRange)
 		{
 			OnInteractiveObjExit();
@@ -24,9 +36,11 @@ public class InteractiveDoor : MonoBehaviour {
 		{
 			OnInteractiveObjEnter();
 			ContextMenuUpdate();
-
 			OpenDoor();
 		}
+		
+		if(isLocked == false)
+			GetComponent<MeshRenderer>().material.color = Color.green;
 	}
 
 	void OnInteractiveObjEnter()
@@ -43,13 +57,13 @@ public class InteractiveDoor : MonoBehaviour {
 	{
 		if (isLocked == true)
 		{
-			contextMenu.transform.Find("Open").gameObject.SetActive(false);
-			contextMenu.transform.Find("Locked").gameObject.SetActive(true);
+			contextMenu.Find("Open").gameObject.SetActive(false);
+			contextMenu.Find("Locked").gameObject.SetActive(true);
 		}
 		else
 		{
-			contextMenu.transform.Find("Open").gameObject.SetActive(true);
-			contextMenu.transform.Find("Locked").gameObject.SetActive(false);
+			contextMenu.Find("Open").gameObject.SetActive(true);
+			contextMenu.Find("Locked").gameObject.SetActive(false);
 		}
 	}
 
@@ -57,9 +71,13 @@ public class InteractiveDoor : MonoBehaviour {
 	{
 		if (Input.GetKey(KeyCode.E) && (isLocked == false))
 		{
-			contextMenu.gameObject.SetActive(false);
-			print("Door opened!");
-			animator.SetTrigger("Opening");
+			OpenDoorAuto();
 		}
+	}
+	
+	public void OpenDoorAuto()
+	{
+		animator.SetTrigger("Opening");
+		isDisabled = true;
 	}
 }
