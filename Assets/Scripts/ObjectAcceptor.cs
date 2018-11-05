@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class ObjectAcceptor : MonoBehaviour
 {
-	public Material initialMaterial;
-	public Material activatedMaterial;
+	//public Material initialMaterial;
+	//public Material activatedMaterial;
 	public GameObject activator;
+	public GameObject door;
+	
 	// Use this for initialization
 	void Start ()
 	{
-		initialMaterial = transform.parent.GetComponent<MeshRenderer>().material;
+		//initialMaterial = transform.parent.GetComponent<MeshRenderer>().material;
 		//activatedMaterial = transform.parent.GetComponent<MeshRenderer>().material;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	private void OnTriggerEnter(Collider other)
 	{
 		//print("enter trigger from acceptor!!");
-		if(activator.name==other.name)
-			transform.parent.GetComponent<MeshRenderer>().material = activatedMaterial;
+		if (activator.name == other.name)
+		{
+			//transform.parent.GetComponent<MeshRenderer>().material = activatedMaterial;
+			door.GetComponent<InteractiveDoor>().OpenDoorAuto();
+		}
 	}
 
 	private void OnTriggerExit(Collider other)
 	{
-		if(activator.name==other.name)
-			transform.parent.GetComponent<MeshRenderer>().material = initialMaterial;
+		/*if (activator.name == other.name)
+			transform.parent.GetComponent<MeshRenderer>().material = initialMaterial;*/
 	}
 }
