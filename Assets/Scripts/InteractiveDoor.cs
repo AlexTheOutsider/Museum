@@ -74,7 +74,10 @@ public class InteractiveDoor : MonoBehaviour {
 		if (Input.GetKey(KeyCode.E) && (isLocked == false))
 		{
 			OpenDoorAuto();
-			musicController.playMusic(music);
+			if (musicController != null && music != null)
+			{
+				musicController.playMusic(music);
+			}
 		}
 	}
 	
