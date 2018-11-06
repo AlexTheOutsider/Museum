@@ -7,6 +7,8 @@ public class InteractiveDoor : MonoBehaviour {
 
 	public bool isLocked = true;
 	public float interactiveRange = 1f;
+	public MusicController musicController;
+	public AudioClip music;
 	
 	private Transform player;
 	private Transform contextMenu;
@@ -72,6 +74,7 @@ public class InteractiveDoor : MonoBehaviour {
 		if (Input.GetKey(KeyCode.E) && (isLocked == false))
 		{
 			OpenDoorAuto();
+			musicController.playMusic(music);
 		}
 	}
 	

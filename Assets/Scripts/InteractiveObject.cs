@@ -26,11 +26,12 @@ public class InteractiveObject : MonoBehaviour
 	private void Update ()
 	{
 		distance = Vector3.Distance(transform.position, player.Find("Guide").position);
+		//print("Distance: " + distance);
 		if (distance >= interactiveRange)
 		{
 			OnInteractiveObjExit();
-			if(GetComponent<Rigidbody>().velocity.magnitude < 0.01f){
-				GetComponent<Rigidbody>().isKinematic = true;
+			if( GetComponent<Rigidbody>().velocity.magnitude < 0.01f){
+				 GetComponent<Rigidbody>().isKinematic = true;
 			}
 		}
 		else
@@ -77,15 +78,15 @@ public class InteractiveObject : MonoBehaviour
 				transform.SetParent(player.Find("Guide"));
 				transform.position = player.Find("Pickup").position;
 				transform.rotation = player.Find("Pickup").rotation;
-				GetComponent<Rigidbody>().isKinematic = true;
-				GetComponent<Rigidbody>().velocity = Vector3.zero;
-				GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+				 GetComponent<Rigidbody>().isKinematic = true;
+				 GetComponent<Rigidbody>().velocity = Vector3.zero;
+				 GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 				isHolding = true;
 			}
 			else
 			{
 				transform.SetParent(prevParent);
-				GetComponent<Rigidbody>().isKinematic = false;
+				 GetComponent<Rigidbody>().isKinematic = false;
 				isHolding = false;
 			}
 		}
@@ -98,11 +99,11 @@ public class InteractiveObject : MonoBehaviour
 			if (isHolding == true)
 			{
 				transform.SetParent(prevParent);
-				GetComponent<Rigidbody>().isKinematic = false;
+				 GetComponent<Rigidbody>().isKinematic = false;
 				
-				//transform.parent.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * throwForce);
+				// GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * throwForce);
 				Vector3 direction = player.Find("Aim").position - transform.position;
-				GetComponent<Rigidbody>().AddForce(direction.normalized * throwForce);
+				 GetComponent<Rigidbody>().AddForce(direction.normalized * throwForce);
 
 				isHolding = false;
 			}
@@ -115,12 +116,12 @@ public class InteractiveObject : MonoBehaviour
 		{
 			acceptor.gameObject.SetActive(false);
 
-			GetComponent<Rigidbody>().velocity = Vector3.zero;
-			GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+			 GetComponent<Rigidbody>().velocity = Vector3.zero;
+			 GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 			transform.position = acceptor.position;
 			transform.rotation = acceptor.rotation;
 			transform.SetParent(prevParent);
-			GetComponent<Rigidbody>().isKinematic = true;
+			 GetComponent<Rigidbody>().isKinematic = true;
 			isHolding = false;
 
 			door.isLocked = false;

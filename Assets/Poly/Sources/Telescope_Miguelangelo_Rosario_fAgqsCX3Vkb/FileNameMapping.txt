@@ -1,0 +1,2 @@
+telescope.bin -> DA6EDBD5DC549EAFABF7867993BE9176.bin
+Separato_UV1_default_color.jpeg -> 095E922AFA829EB16D12B76E06326705.jpeg

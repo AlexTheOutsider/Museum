@@ -9,7 +9,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="CameraController.cs" t="Include" />
         <e p="DebugDrawingExtension" t="Include">
           <e p="DebugExtension.cs" t="Include" />
           <e p="Example" t="Include">
@@ -31,7 +30,6 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
-        <e p="Piano.cs" t="Include" />
         <e p="Poly" t="Include">
           <e p="Resources" t="Include">
             <e p="PolyAttributions.txt" t="Include" />
@@ -170,6 +168,9 @@
               <e p="FileNameMapping.txt" t="Include" />
             </e>
             <e p="Telescope_Don_Carson_3HJCpDzBQEw" t="Include">
+              <e p="FileNameMapping.txt" t="Include" />
+            </e>
+            <e p="Telescope_Miguelangelo_Rosario_fAgqsCX3Vkb" t="Include">
               <e p="FileNameMapping.txt" t="Include" />
             </e>
             <e p="The_Matrix_Chair_Tipatat_Chennavasin_4SWYKr9ftno" t="Include">
@@ -731,14 +732,17 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CameraController.cs" t="Include" />
           <e p="DisplayCollider.cs" t="Include" />
           <e p="Inspection.cs" t="Include" />
           <e p="InteractiveDoor.cs" t="Include" />
           <e p="InteractiveObject.cs" t="Include" />
           <e p="InteractiveSwitch.cs" t="Include" />
           <e p="Mover.cs" t="Include" />
+          <e p="MusicController.cs" t="Include" />
           <e p="ObjectAcceptor.cs" t="Include" />
           <e p="OpenProjector.cs" t="Include" />
+          <e p="Piano.cs" t="Include" />
           <e p="ProjectorController.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
           <e p="Teleporter.cs" t="Include" />

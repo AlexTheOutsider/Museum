@@ -229,6 +229,12 @@ License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
 Title: Telescope
+Author: Miguelangelo Rosario
+URL: https://poly.google.com/view/fAgqsCX3Vkb
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Telescope
 Author: Don Carson
 URL: https://poly.google.com/view/3HJCpDzBQEw
 License: Creative Commons CC-BY
