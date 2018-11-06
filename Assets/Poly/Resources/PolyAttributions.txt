@@ -6,6 +6,12 @@ URL: https://poly.google.com/view/0a8VQXVe_fN
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: amala 1
+Author: Jeremy Eyring
+URL: https://poly.google.com/view/0M-yvruOei2
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: ATL
 Author: Anthony Dardon
 URL: https://poly.google.com/view/5dfXkNHV0sb
