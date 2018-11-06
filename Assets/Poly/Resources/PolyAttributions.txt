@@ -6,9 +6,27 @@ URL: https://poly.google.com/view/0a8VQXVe_fN
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: book
+Author: Casper
+URL: https://poly.google.com/view/aG71Cc3JIxZ
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Book
+Author: Poly by Google
+URL: https://poly.google.com/view/3Bq6ZipNeK9
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Bookshelf
 Author: Wanja Pflüger
 URL: https://poly.google.com/view/15B0ihXkg3C
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: brown book
+Author: Justin Randall
+URL: https://poly.google.com/view/dbRV7J3klY9
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
@@ -18,15 +36,165 @@ URL: https://poly.google.com/view/8CJ12xNGjyf
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Chess Bishop
+Author: Jarlan Perez
+URL: https://poly.google.com/view/7xay8UYqePI
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Chess King
+Author: Jarlan Perez
+URL: https://poly.google.com/view/4TP6oa34Fp-
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Chess Knight
+Author: Jarlan Perez
+URL: https://poly.google.com/view/fMIykP6ncx7
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Chess Pawn
+Author: Jarlan Perez
+URL: https://poly.google.com/view/0xRVhzfseb3
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Chess Queen
+Author: Jarlan Perez
+URL: https://poly.google.com/view/0EE-Yj8eu2c
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Chess Rook
+Author: Jarlan Perez
+URL: https://poly.google.com/view/417Xec_xlU0
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Chess Set
+Author: Pia Leung
+URL: https://poly.google.com/view/bfb3C6hpdi0
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Chess Set
+Author: Jarlan Perez
+URL: https://poly.google.com/view/00f9MZIwA1V
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Earth
+Author: Poly by Google
+URL: https://poly.google.com/view/cfM9k9LFaLz
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Earth
+Author: Poly by Google
+URL: https://poly.google.com/view/88CP80Kgb-u
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: f18 jet
+Author: felix stief
+URL: https://poly.google.com/view/0dUMpp1Aa0C
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Fountain
+Author: Poly by Google
+URL: https://poly.google.com/view/4KKY7CmNe_r
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Fountain
+Author: Poly by Google
+URL: https://poly.google.com/view/0YTMlW0CUHU
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Globe
 Author: Jerad Bitner
 URL: https://poly.google.com/view/df3wqefdefh
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: green book
+Author: Justin Randall
+URL: https://poly.google.com/view/bWjFYZvWJy2
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Hubble telescope
+Author: Poly by Google
+URL: https://poly.google.com/view/61JbLjEpcJT
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: hydra flak
+Author: Jeremy Eyring
+URL: https://poly.google.com/view/3wOhg_Xa__u
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Hylian Shield
 Author: Daniel Bauman
 URL: https://poly.google.com/view/epCyhzBzAig
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Jupiter
+Author: Poly by Google
+URL: https://poly.google.com/view/cI_DG84S1NP
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: low poly battleship
+Author: angelo raffaele Catalano
+URL: https://poly.google.com/view/cqV6mUkn7Ow
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Mars
+Author: Poly by Google
+URL: https://poly.google.com/view/5_IXgyZ8cz_
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Military Truck
+Author: Enter Inventive Studio
+URL: https://poly.google.com/view/aI9GTtX05sA
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Moon
+Author: Poly by Google
+URL: https://poly.google.com/view/fvTF0KVsPAa
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Neptune
+Author: Poly by Google
+URL: https://poly.google.com/view/fxLCXXDYUwC
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Neptune
+Author: Poly by Google
+URL: https://poly.google.com/view/cgAMaxYgk5x
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: open book
+Author: Justin Randall
+URL: https://poly.google.com/view/8ajY788IN_J
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Piano
+Author: Bruno Oliveira
+URL: https://poly.google.com/view/5vbJ5vildOq
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
@@ -42,14 +210,32 @@ URL: https://poly.google.com/view/6PcE3zlscd7
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Solar System
+Author: Jarlan Perez
+URL: https://poly.google.com/view/8hnnpNiQMmy
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Spellbook
 Author: Cymon Butler
 URL: https://poly.google.com/view/5yJbX7PcUCH
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Sun
+Author: Poly by Google
+URL: https://poly.google.com/view/69ejysWdDXG
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Telescope
 Author: Don Carson
 URL: https://poly.google.com/view/3HJCpDzBQEw
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Yellow Notebook
+Author: Ryan Donaldson
+URL: https://poly.google.com/view/1oVOzLG6l6i
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
