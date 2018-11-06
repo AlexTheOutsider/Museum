@@ -17,7 +17,7 @@ MonoBehaviour:
   author: "Wanja Pfl\xFCger"
   url: https://poly.google.com/view/15B0ihXkg3C
   license: 1
---- !u!43 &43144072275154714
+--- !u!43 &43964580358869550
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

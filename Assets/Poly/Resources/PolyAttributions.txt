@@ -30,6 +30,12 @@ URL: https://poly.google.com/view/15B0ihXkg3C
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Bookshelves combined
+Author: Jerad Bitner
+URL: https://poly.google.com/view/16BGcazhzT2
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: brown book
 Author: Justin Randall
 URL: https://poly.google.com/view/dbRV7J3klY9
