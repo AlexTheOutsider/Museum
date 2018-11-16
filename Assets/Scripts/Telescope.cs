@@ -52,12 +52,14 @@ public class Telescope : MonoBehaviour
 			contextMenu.Find("Observe").gameObject.SetActive(true);
 			contextMenu.Find("Exit").gameObject.SetActive(false);
 			contextMenu.Find("Zoom").gameObject.SetActive(false);
+			contextMenu.Find("Move").gameObject.SetActive(false);
 		}
 		else
 		{
 			contextMenu.Find("Observe").gameObject.SetActive(false);
 			contextMenu.Find("Exit").gameObject.SetActive(true);
 			contextMenu.Find("Zoom").gameObject.SetActive(true);
+			contextMenu.Find("Move").gameObject.SetActive(true);
 		}
 	}
 

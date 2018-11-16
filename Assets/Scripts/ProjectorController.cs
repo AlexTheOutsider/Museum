@@ -17,23 +17,30 @@ public class ProjectorController : MonoBehaviour
 		if (activatedNum == 4 && !isActivated)
 		{
 			StartCoroutine(StartProject());
-			door.isLocked = false;
 			isActivated = true;
 		}
 	}
 
 	IEnumerator StartProject()
 	{
-		transform.GetChild(0).GetComponent<Light>().enabled = true;
+		GetComponent<Projector>().enabled = true;
+		yield return new WaitForSeconds(3);
+		
 		musicController.GetComponent<AudioSource>().loop = false;
 		musicController.playMusic(sound);
+		transform.Find("Spot Light").GetComponent<Light>().enabled = true;
 		yield return new WaitForSeconds(2);
 		
-		transform.GetChild(0).GetComponent<Light>().enabled = false;
-		GetComponent<Projector>().enabled = true;
+		transform.Find("Point Light").GetComponent<Light>().enabled = true;
+		transform.Find("Spot Light").GetComponent<Light>().enabled = false;
+		musicController.playMusic(sound);
+		yield return new WaitForSeconds(1);
+		
 		GetComponent<Rotator>().enabled = true;
 		musicController.GetComponent<AudioSource>().loop = true;
 		musicController.playMusic(music);
+		
+		door.isLocked = false;
 	}
 
 	public void ActivateSwitch()

@@ -41,8 +41,8 @@ public class InteractiveDoor : MonoBehaviour {
 			OpenDoor();
 		}
 		
-		if(isLocked == false)
-			GetComponent<MeshRenderer>().material.color = Color.green;
+		//if(isLocked == false)
+		//	GetComponent<MeshRenderer>().material.color = Color.green;
 	}
 
 	void OnInteractiveObjEnter()
@@ -76,7 +76,7 @@ public class InteractiveDoor : MonoBehaviour {
 			OpenDoorAuto();
 			if (musicController != null && music != null)
 			{
-				musicController.playMusic(music);
+				//musicController.playMusic(music);
 			}
 		}
 	}
