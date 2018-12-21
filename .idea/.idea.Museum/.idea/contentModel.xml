@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Whalex\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Whalex\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Museum.-1393926540.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Whalex\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Whalex\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Museum.-1393926540.00" t="ExcludeRecursive" />
     <e p="C:\Users\Whalex\RiderProjects\Museum" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -35,6 +35,9 @@
             <e p="PolyAttributions.txt" t="Include" />
           </e>
           <e p="Sources" t="Include">
+            <e p="__chun_WU_0N6jYrjDqfF" t="Include">
+              <e p="FileNameMapping.txt" t="Include" />
+            </e>
             <e p="accad_table_Joe_Chambers_0a8VQXVe_fN" t="Include">
               <e p="FileNameMapping.txt" t="Include" />
             </e>

@@ -6,6 +6,7 @@ public class ProjectorController : MonoBehaviour
 {
 	public int activatedNum = 0;
 	public InteractiveDoor door;
+	public InteractiveDoor door2;
 	public MusicController musicController;
 	public AudioClip music;
 	public AudioClip sound;
@@ -23,6 +24,7 @@ public class ProjectorController : MonoBehaviour
 
 	IEnumerator StartProject()
 	{
+		door2.CloseDoorAuto();
 		GetComponent<Projector>().enabled = true;
 		yield return new WaitForSeconds(3);
 		

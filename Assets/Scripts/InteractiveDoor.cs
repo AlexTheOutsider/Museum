@@ -87,4 +87,11 @@ public class InteractiveDoor : MonoBehaviour {
 		contextMenu.gameObject.SetActive(false);
 		isDisabled = true;
 	}
+	
+	public void CloseDoorAuto()
+	{
+		animator.SetTrigger("Closing");
+		contextMenu.gameObject.SetActive(false);
+		isDisabled = true;
+	}
 }
