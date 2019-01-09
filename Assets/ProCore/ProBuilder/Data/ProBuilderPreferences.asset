@@ -15,6 +15,13 @@ MonoBehaviour:
   - pbIconGUI
   - pbDefaultOpenInDockableWindow
   - pbEnableBackfaceSelection
+  - pbExportAsGroup
+  - pbObjExportRightHanded
+  - pbObjApplyTransform
+  - pbObjExportCopyTextures
+  - pbObjExportVertexColors
+  - pbObjTextureOffsetScale
+  - pbObjQuads
   m_Int_keys:
   - pbHandleAlignment
   - pbDefaultEditLevel
@@ -22,6 +29,7 @@ MonoBehaviour:
   - pb_GIWorkflowMode
   - pbDefaultExportFormat
   - pbDragSelectMode
+  - pbMirrorObjectScale
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
@@ -29,8 +37,8 @@ MonoBehaviour:
   - pbCurrentMaterialPalette
   m_Color_keys: []
   m_Material_keys: []
-  m_Bool_values: 000000
-  m_Int_values: 010000000000000002000000010000000300000002000000
+  m_Bool_values: 00010100000000000000
+  m_Int_values: 01000000000000000100000001000000030000000200000009000000
   m_Float_values:
   - 0
   - 0
