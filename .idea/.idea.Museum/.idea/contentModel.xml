@@ -752,22 +752,37 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CameraController.cs" t="Include" />
-          <e p="DisplayCollider.cs" t="Include" />
           <e p="Inspection.cs" t="Include" />
-          <e p="InteractiveDoor.cs" t="Include" />
-          <e p="InteractiveObject.cs" t="Include" />
-          <e p="InteractiveSwitch.cs" t="Include" />
-          <e p="Mover.cs" t="Include" />
+          <e p="Interactive" t="Include">
+            <e p="Door.cs" t="Include" />
+            <e p="Interactive.cs" t="Include" />
+            <e p="PianoNew.cs" t="Include" />
+            <e p="Switch.cs" t="Include" />
+            <e p="TelescopeNew.cs" t="Include" />
+            <e p="Throwable.cs" t="Include" />
+          </e>
+          <e p="ItemMenuManager.cs" t="Include" />
+          <e p="Legacy" t="Include">
+            <e p="InteractiveDoor.cs" t="Include" />
+            <e p="InteractiveObject.cs" t="Include" />
+            <e p="InteractiveSwitch.cs" t="Include" />
+            <e p="ObjectAcceptor.cs" t="Include" />
+            <e p="OpenProjector.cs" t="Include" />
+            <e p="Piano.cs" t="Include" />
+            <e p="Telescope.cs" t="Include" />
+          </e>
           <e p="MusicController.cs" t="Include" />
           <e p="MusicTrigger.cs" t="Include" />
-          <e p="ObjectAcceptor.cs" t="Include" />
-          <e p="OpenProjector.cs" t="Include" />
-          <e p="Piano.cs" t="Include" />
           <e p="ProjectorController.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
-          <e p="Teleporter.cs" t="Include" />
-          <e p="Telescope.cs" t="Include" />
+          <e p="Test" t="Include">
+            <e p="DisplayCollider.cs" t="Include" />
+            <e p="Humanoid.cs" t="Include" />
+            <e p="Mover.cs" t="Include" />
+            <e p="Orc.cs" t="Include" />
+            <e p="OverridingTest.cs" t="Include" />
+            <e p="Teleporter.cs" t="Include" />
+          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
