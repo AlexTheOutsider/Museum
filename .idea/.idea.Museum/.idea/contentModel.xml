@@ -752,6 +752,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="GameManager.cs" t="Include" />
           <e p="Inspection.cs" t="Include" />
           <e p="Interactive" t="Include">
             <e p="Door.cs" t="Include" />
