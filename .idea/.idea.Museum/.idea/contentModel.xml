@@ -752,6 +752,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CamSwitch.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Inspection.cs" t="Include" />
           <e p="Interactive" t="Include">
@@ -771,6 +772,7 @@
             <e p="OpenProjector.cs" t="Include" />
             <e p="Piano.cs" t="Include" />
             <e p="Telescope.cs" t="Include" />
+            <e p="TextFlicker.cs" t="Include" />
           </e>
           <e p="MusicController.cs" t="Include" />
           <e p="MusicTrigger.cs" t="Include" />
