@@ -753,6 +753,17 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CamSwitch.cs" t="Include" />
+          <e p="CustomPlayableTrack" t="Include">
+            <e p="LightControlBehaviour.cs" t="Include" />
+            <e p="LightControlClip.cs" t="Include" />
+            <e p="LightControlMixer.cs" t="Include" />
+            <e p="LightControlTrack.cs" t="Include" />
+          </e>
+          <e p="Dialogue" t="Include">
+            <e p="Dialogue.cs" t="Include" />
+            <e p="DialogueManager.cs" t="Include" />
+            <e p="DialogueTrigger.cs" t="Include" />
+          </e>
           <e p="GameManager.cs" t="Include" />
           <e p="Inspection.cs" t="Include" />
           <e p="Interactive" t="Include">
@@ -778,12 +789,14 @@
           <e p="MusicTrigger.cs" t="Include" />
           <e p="ProjectorController.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
+          <e p="Singleton.cs" t="Include" />
           <e p="Test" t="Include">
             <e p="DisplayCollider.cs" t="Include" />
             <e p="Humanoid.cs" t="Include" />
             <e p="Mover.cs" t="Include" />
             <e p="Orc.cs" t="Include" />
             <e p="OverridingTest.cs" t="Include" />
+            <e p="SingletonTest.cs" t="Include" />
             <e p="Teleporter.cs" t="Include" />
           </e>
         </e>
