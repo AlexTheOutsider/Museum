@@ -12,6 +12,16 @@ public class Door : Interactive {
 	private Animator animator;
 	private bool isDisabled = false;
 
+	private void OnEnable()
+	{
+		EventManager.Instance.StartListening("Door",OpenDoorAuto);
+	}
+
+	private void OnDisable()
+	{
+		EventManager.Instance.StopListening("Door",OpenDoorAuto);
+	}
+	
 	protected override void Start()
 	{
 		base.Start();

@@ -109,7 +109,7 @@ public class Throwable : Interactive
 			isHolding = false;
 
 			door.isLocked = false;
-			door.OpenDoorAuto();
+			EventManager.Instance.TriggerEvent("Door");
 		}
 	}
 }

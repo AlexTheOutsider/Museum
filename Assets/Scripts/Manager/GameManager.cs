@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         mainMenu = GameObject.Find("MainMenu").transform;
         title = mainMenu.Find("Title").GetComponent<Text>();
         start = mainMenu.Find("Start").GetComponent<Text>();
+        DOTween.SetTweensCapacity(500, 500);
         start.DOFade(0.2f, 3).SetLoops(-1,LoopType.Yoyo).SetEase(Ease.InOutSine);
     }
     

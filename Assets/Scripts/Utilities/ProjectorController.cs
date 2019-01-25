@@ -10,8 +10,19 @@ public class ProjectorController : MonoBehaviour
 	public MusicController musicController;
 	public AudioClip music;
 	public AudioClip sound;
+	public Dialogue dialogue;
 	
 	private bool isActivated = false;
+
+	private void OnEnable()
+	{
+		EventManager.Instance.StartListening("Switch",ActivateSwitch);
+	}
+
+	private void OnDisable()
+	{
+		EventManager.Instance.StopListening("Switch",ActivateSwitch);
+	}
 
 	void Update ()
 	{
@@ -26,6 +37,7 @@ public class ProjectorController : MonoBehaviour
 	{
 		door2.CloseDoorAuto();
 		GetComponent<Projector>().enabled = true;
+		DialogueManager.Instance.StartDialogue(dialogue,DialogueManager.DialogueType.Fade,true);
 		yield return new WaitForSeconds(3);
 		
 		musicController.GetComponent<AudioSource>().loop = false;

@@ -46,7 +46,8 @@ public class Switch : Interactive
     {
         if (Input.GetKey(KeyCode.E) && (isActivated == false))
         {
-            projector.ActivateSwitch();
+            //projector.ActivateSwitch();
+            EventManager.Instance.TriggerEvent("Switch");
 			
             gameObject.GetComponent<MeshRenderer>().material.color = Color.blue;
             transform.GetChild(0).GetComponent<Light>().color = Color.blue;

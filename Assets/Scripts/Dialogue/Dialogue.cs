@@ -7,6 +7,13 @@ using UnityEngine;
 public class Dialogue
 {
     public string name;
+    public SentenceInfo[] sentences;
+}
+
+[Serializable]
+public class SentenceInfo
+{
     [TextArea(3,10)]
-    public string[] sentences;
+    public string text;
+    public int stayTime = 3;
 }
