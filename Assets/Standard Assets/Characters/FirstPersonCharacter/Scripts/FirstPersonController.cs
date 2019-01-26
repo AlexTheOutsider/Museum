@@ -77,6 +77,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
             {
+                //falling down without jumping               
                 m_MoveDir.y = 0f;
             }
 
