@@ -753,26 +753,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CustomPlayableTrack" t="Include">
-            <e p="LightControlBehaviour.cs" t="Include" />
-            <e p="LightControlClip.cs" t="Include" />
-            <e p="LightControlMixer.cs" t="Include" />
-            <e p="LightControlTrack.cs" t="Include" />
-          </e>
-          <e p="Dialogue" t="Include">
-            <e p="Dialogue.cs" t="Include" />
-            <e p="DialogueManager.cs" t="Include" />
-            <e p="DialogueTrigger.cs" t="Include" />
-          </e>
-          <e p="Interactive" t="Include">
-            <e p="Door.cs" t="Include" />
-            <e p="Interactive.cs" t="Include" />
-            <e p="PianoNew.cs" t="Include" />
-            <e p="Switch.cs" t="Include" />
-            <e p="TelescopeNew.cs" t="Include" />
-            <e p="Throwable.cs" t="Include" />
-          </e>
-          <e p="Legacy" t="Include">
+          <e p="_Legacy" t="Include">
             <e p="InteractiveDoor.cs" t="Include" />
             <e p="InteractiveObject.cs" t="Include" />
             <e p="InteractiveSwitch.cs" t="Include" />
@@ -782,30 +763,57 @@
             <e p="Telescope.cs" t="Include" />
             <e p="TextFlicker.cs" t="Include" />
           </e>
-          <e p="Manager" t="Include">
-            <e p="EventManager.cs" t="Include" />
-            <e p="GameManager.cs" t="Include" />
-            <e p="ItemMenuManager.cs" t="Include" />
-            <e p="MusicController.cs" t="Include" />
-          </e>
-          <e p="PlayerController.cs" t="Include" />
-          <e p="PlayerMotor.cs" t="Include" />
-          <e p="Test" t="Include">
-            <e p="DisplayCollider.cs" t="Include" />
-            <e p="EventTest.cs" t="Include" />
-            <e p="EventTriggerTest.cs" t="Include" />
+          <e p="_Test" t="Include">
             <e p="Humanoid.cs" t="Include" />
             <e p="Mover.cs" t="Include" />
             <e p="Orc.cs" t="Include" />
             <e p="OverridingTest.cs" t="Include" />
             <e p="SingletonTest.cs" t="Include" />
+          </e>
+          <e p="CamSwitch.cs" t="Include" />
+          <e p="Debug" t="Include">
+            <e p="DisplayCollider.cs" t="Include" />
+          </e>
+          <e p="Intro.cs" t="Include" />
+          <e p="Music" t="Include">
+            <e p="MusicManager.cs" t="Include" />
+            <e p="MusicTrigger.cs" t="Include" />
+          </e>
+          <e p="Objects" t="Include">
+            <e p="Door.cs" t="Include" />
+            <e p="Inspection.cs" t="Include" />
+            <e p="PianoNew.cs" t="Include" />
+            <e p="Projector.cs" t="Include" />
+            <e p="Switch.cs" t="Include" />
             <e p="Teleporter.cs" t="Include" />
+            <e p="TelescopeNew.cs" t="Include" />
+            <e p="Throwable.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Dialogue" t="Include">
+              <e p="Dialogue.cs" t="Include" />
+              <e p="DialogueManager.cs" t="Include" />
+              <e p="DialogueTrigger.cs" t="Include" />
+            </e>
+            <e p="ItemMenuManager.cs" t="Include" />
           </e>
           <e p="Utilities" t="Include">
-            <e p="CamSwitch.cs" t="Include" />
-            <e p="Inspection.cs" t="Include" />
-            <e p="MusicTrigger.cs" t="Include" />
-            <e p="ProjectorController.cs" t="Include" />
+            <e p="CustomPlayableTrack" t="Include">
+              <e p="LightControlBehaviour.cs" t="Include" />
+              <e p="LightControlClip.cs" t="Include" />
+              <e p="LightControlMixer.cs" t="Include" />
+              <e p="LightControlTrack.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="EventManager.cs" t="Include" />
+              <e p="EventTest.cs" t="Include" />
+              <e p="EventTriggerTest.cs" t="Include" />
+            </e>
+            <e p="Interactive.cs" t="Include" />
+            <e p="PlayerController" t="Include">
+              <e p="PlayerController.cs" t="Include" />
+              <e p="PlayerMotor.cs" t="Include" />
+            </e>
             <e p="Rotator.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
           </e>

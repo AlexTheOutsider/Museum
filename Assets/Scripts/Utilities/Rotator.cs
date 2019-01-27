@@ -1,15 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
-	public float x;
-	public float y;
-	public float z;
+	public Vector3 selfRotation;
 
-	public float degree;
-	public Transform center;
+	public float revolutionSpeed;
+	public Transform revolutionCenter;
 	
 	private Vector3 marginPoint;
 	private Vector3 centerPoint;
@@ -17,22 +13,22 @@ public class Rotator : MonoBehaviour
 
 	void Start()
 	{
-		if (center != null)
+		if (revolutionCenter != null)
 		{
-			marginPoint = new Vector3(center.position.x + center.lossyScale.x, 0,
-				center.position.z + center.lossyScale.z);
-			centerPoint = center.position - transform.position;
+			marginPoint = new Vector3(revolutionCenter.position.x + revolutionCenter.lossyScale.x, 0,
+				revolutionCenter.position.z + revolutionCenter.lossyScale.z);
+			centerPoint = revolutionCenter.position - transform.position;
 		}
 	}
 
 	void Update()
 	{
-		transform.Rotate(new Vector3(x, y, z) * Time.deltaTime);
+		transform.Rotate(selfRotation * Time.deltaTime);
 		
-		if (center != null)
+		if (revolutionCenter != null)
 		{
 			CalculateRotationAxis();
-			transform.RotateAround(center.position, axis, degree * Time.deltaTime);
+			transform.RotateAround(revolutionCenter.position, axis, revolutionSpeed * Time.deltaTime);
 		}
 	}
 
