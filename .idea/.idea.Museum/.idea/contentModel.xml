@@ -754,9 +754,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="_Legacy" t="Include">
+            <e p="GameManager.cs" t="Include" />
             <e p="InteractiveDoor.cs" t="Include" />
             <e p="InteractiveObject.cs" t="Include" />
             <e p="InteractiveSwitch.cs" t="Include" />
+            <e p="MusicController.cs" t="Include" />
             <e p="ObjectAcceptor.cs" t="Include" />
             <e p="OpenProjector.cs" t="Include" />
             <e p="Piano.cs" t="Include" />
@@ -775,10 +777,6 @@
             <e p="DisplayCollider.cs" t="Include" />
           </e>
           <e p="Intro.cs" t="Include" />
-          <e p="Manager" t="Include">
-            <e p="GameManager.cs" t="Include" />
-            <e p="MusicController.cs" t="Include" />
-          </e>
           <e p="Music" t="Include">
             <e p="MusicManager.cs" t="Include" />
             <e p="MusicTrigger.cs" t="Include" />
@@ -810,6 +808,7 @@
             </e>
             <e p="Events" t="Include">
               <e p="EventManager.cs" t="Include" />
+              <e p="EventManagerNew.cs" t="Include" />
               <e p="EventTest.cs" t="Include" />
               <e p="EventTriggerTest.cs" t="Include" />
             </e>
@@ -821,6 +820,10 @@
             <e p="ProjectorController.cs" t="Include" />
             <e p="Rotator.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
+            <e p="States" t="Include">
+              <e p="FSM.cs" t="Include" />
+              <e p="GameStates.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Standard Assets" t="Include">

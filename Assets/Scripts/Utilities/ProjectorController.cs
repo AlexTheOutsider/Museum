@@ -26,6 +26,7 @@ public class ProjectorController : MonoBehaviour
 
 	private void OnDisable()
 	{
+		if (EventManager.Instance == null) return;
 		EventManager.Instance.StopListening("Switch",ActivateSwitch);
 	}
 

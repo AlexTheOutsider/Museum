@@ -17,6 +17,8 @@ public class Door : Interactive {
 
 	private void OnDisable()
 	{
+		if (EventManager.Instance == null) return;
+		
 		EventManager.Instance.StopListening("DoorOpen",OpenDoorAuto);
 		EventManager.Instance.StopListening("DoorClose",CloseDoorAuto);
 		EventManager.Instance.StopListening("DoorUnlock",UnlockDoor);

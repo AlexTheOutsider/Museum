@@ -33,6 +33,8 @@ public class Projector : MonoBehaviour
 		if (activatedNum == 4 && !isActivated)
 		{
 			StartCoroutine(StartProject());
+			//Intro.Instance.gameState = Intro.State.Cutscenes;
+			EventManager.Instance.TriggerEvent("CutSceneEvent");
 			isActivated = true;
 		}
 	}
@@ -44,7 +46,6 @@ public class Projector : MonoBehaviour
 		
 		GetComponent<UnityEngine.Projector>().enabled = true;
 		DialogueManager.Instance.StartDialogue(dialogue,DialogueManager.DialogueType.Fade,true);
-		player.GetComponent<FirstPersonController>().enabled = false;
 		mySequence = DOTween.Sequence();
 		mySequence.Append(player.transform.DOLookAt(star.position,1).SetEase(Ease.InOutSine))
 			.AppendCallback(() =>
@@ -54,7 +55,8 @@ public class Projector : MonoBehaviour
 					float anglesX = player.transform.eulerAngles.x;
 					player.transform.localRotation = Quaternion.Euler(0f,player.transform.eulerAngles.y,0f);
 					player.transform.GetChild(0).localRotation = Quaternion.Euler(player.transform.GetChild(0).eulerAngles.x+anglesX,0f,0f);
-					player.GetComponent<FirstPersonController>().enabled = true;
+					//Intro.Instance.gameState = Intro.State.Playing;
+					EventManager.Instance.TriggerEvent("ResumeGameEvent");
 			});
 		yield return new WaitForSeconds(3);
 		
