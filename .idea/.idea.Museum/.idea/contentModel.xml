@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Whalex\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Whalex\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Museum.-1393926540.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Whalex\RiderProjects\Museum" t="IncludeRecursive">
+    <e p="C:\Users\Whalex\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Museum.-476103913.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Whalex\Documents\Unity Projects\Museum" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -775,6 +775,10 @@
             <e p="DisplayCollider.cs" t="Include" />
           </e>
           <e p="Intro.cs" t="Include" />
+          <e p="Manager" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="MusicController.cs" t="Include" />
+          </e>
           <e p="Music" t="Include">
             <e p="MusicManager.cs" t="Include" />
             <e p="MusicTrigger.cs" t="Include" />
@@ -814,6 +818,7 @@
               <e p="PlayerController.cs" t="Include" />
               <e p="PlayerMotor.cs" t="Include" />
             </e>
+            <e p="ProjectorController.cs" t="Include" />
             <e p="Rotator.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
           </e>
