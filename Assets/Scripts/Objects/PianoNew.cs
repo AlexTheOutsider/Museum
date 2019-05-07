@@ -7,17 +7,17 @@ public class PianoNew : Interactive
 	protected override void InitializeItemMenu()
 	{
 		base.InitializeItemMenu();
-		dictPickup.Add("Text", "Play");
+/*		dictPickup.Add("Text", "Play");*/
 	}
 	
 	protected override void ContextMenuUpdate()
 	{			
 		base.ContextMenuUpdate();
-		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.PickupPanel, dictPickup);
+/*		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.PickupPanel, dictPickup);
 		
 		ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.PickupPanel, true);
 		ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.LockedPanel, false);
-		ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.UsePanel, false);
+		ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.UsePanel, false);*/
 	}
 
 	protected override void Function()

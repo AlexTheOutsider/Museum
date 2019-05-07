@@ -18,16 +18,16 @@ public class Throwable : Interactive
 	protected override void InitializeItemMenu()
 	{
 		base.InitializeItemMenu();
-		dictPickup.Add("Text", "Pickup");
+/*		dictPickup.Add("Text", "Pickup");
 		dictUse.Add("Function 1", "<color=aqua>LEFT CLICK</color> to Throw");
-		dictUse.Add("Exit", "Press <color=aqua>E</color> to Drop");
+		dictUse.Add("Exit", "Press <color=aqua>E</color> to Drop");*/
 	}
 	
 	protected override void ContextMenuUpdate()
 	{
 		base.ContextMenuUpdate();
 		
-		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.PickupPanel, dictPickup);
+/*		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.PickupPanel, dictPickup);
 		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.UsePanel, dictUse);
 		
 		if (isHolding == true)
@@ -42,7 +42,7 @@ public class Throwable : Interactive
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.PickupPanel,true);
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.LockedPanel,false);
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.UsePanel,false);
-		}
+		}*/
 	}
 
 	protected override void Function()
@@ -55,7 +55,7 @@ public class Throwable : Interactive
 	{
 		if (Input.GetKeyDown(KeyCode.E))
 		{
-			if (isHolding == false)
+			if (ui.isUsing == false)
 			{
 				transform.SetParent(player.Find("Guide"));
 				transform.position = player.Find("Pickup").position;
@@ -63,13 +63,13 @@ public class Throwable : Interactive
 				 GetComponent<Rigidbody>().isKinematic = true;
 				 GetComponent<Rigidbody>().velocity = Vector3.zero;
 				 GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-				isHolding = true;
+				ui.isUsing = true;
 			}
 			else
 			{
 				transform.SetParent(prevParent);
 				 GetComponent<Rigidbody>().isKinematic = false;
-				isHolding = false;
+				ui.isUsing = false;
 			}
 		}
 	}
@@ -78,7 +78,7 @@ public class Throwable : Interactive
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			if (isHolding == true)
+			if (ui.isUsing == true)
 			{
 				transform.SetParent(prevParent);
 				 GetComponent<Rigidbody>().isKinematic = false;
@@ -87,7 +87,7 @@ public class Throwable : Interactive
 				Vector3 direction = player.Find("Aim").position - transform.position;
 				 GetComponent<Rigidbody>().AddForce(direction.normalized * throwForce);
 
-				isHolding = false;
+				ui.isUsing = false;
 			}
 		}
 	}
@@ -104,7 +104,7 @@ public class Throwable : Interactive
 			transform.rotation = acceptor.rotation;
 			transform.SetParent(prevParent);
 			GetComponent<Rigidbody>().isKinematic = true;
-			isHolding = false;
+			ui.isUsing = false;
 
 			door.OpenDoorAuto();
 			//EventManager.Instance.TriggerEvent("DoorOpen");

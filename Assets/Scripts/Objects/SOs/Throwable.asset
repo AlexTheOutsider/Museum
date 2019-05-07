@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0994b9bdecd799a4ba490211859787b8, type: 3}
+  m_Name: Throwable
+  m_EditorClassIdentifier: 
+  pickupText: Pickup
+  lockText: 
+  useText: <color=aqua>LEFT CLICK</color> to Throw
+  useText2: Press <color=aqua>E</color> to Drop
+  exitText: 
+  directUse: 0
+  isUsing: 0
+  isLocked: 0

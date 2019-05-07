@@ -15,6 +15,9 @@ public class Interactive : MonoBehaviour
     protected Dictionary<String, String> dictPickup;
     protected Dictionary<String, String> dictLocked;
     protected Dictionary<String, String> dictUse;
+
+    public InteractiveObjectUI ui;
+    
     protected virtual void Start()
     {
 	    player = GameObject.FindWithTag("Player").transform.GetChild(0);
@@ -55,6 +58,9 @@ public class Interactive : MonoBehaviour
 	    itemMenu.gameObject.SetActive(true);
 	    shouldMenuBeClosed = true;
 	    //Expanded by child class
+
+	    if (ui != null)
+			ItemMenuManager.Instance.UpdateMenu(ui);
     }
 	
     protected virtual void InitializeItemMenu()
@@ -64,6 +70,8 @@ public class Interactive : MonoBehaviour
 	    dictLocked = new Dictionary<String, String>();
 	    dictUse = new Dictionary<String, String>();
 		//Expanded by child class
+		
+		
     }
 
     protected virtual void Function()

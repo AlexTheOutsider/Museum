@@ -40,18 +40,19 @@ public class Door : Interactive {
 	protected override void InitializeItemMenu()
 	{
 		base.InitializeItemMenu();
+/*
 		
 		dictPickup.Add("Text", "Open");
-		dictLocked.Add("Text", "The door has been locked.");
+		dictLocked.Add("Text", "The door has been locked.");*/
 	}
 	
 	protected override void ContextMenuUpdate()
 	{
 		base.ContextMenuUpdate();
-		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.PickupPanel, dictPickup);
+/*		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.PickupPanel, dictPickup);
 		ItemMenuManager.Instance.UpdateMenu(ItemMenuManager.ItemMenuType.LockedPanel, dictLocked);
 		
-		if (isLocked == true)
+		if (ui.isLocked == true)
 		{
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.PickupPanel,false);
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.LockedPanel,true);
@@ -62,7 +63,7 @@ public class Door : Interactive {
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.PickupPanel,true);
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.LockedPanel,false);
 			ItemMenuManager.Instance.ToggleDisplay(ItemMenuManager.ItemMenuType.UsePanel,false);
-		}
+		}*/
 	}
 
 	protected override void Function()
@@ -76,7 +77,7 @@ public class Door : Interactive {
 	
 	private void OpenDoor()
 	{
-		if (isLocked == false)
+		if (ui.isLocked == false)
 		{
 			OpenDoorAuto();
 			
@@ -106,6 +107,6 @@ public class Door : Interactive {
 
 	public void UnlockDoor()
 	{
-		isLocked = false;
+		ui.isLocked = false;
 	}
 }

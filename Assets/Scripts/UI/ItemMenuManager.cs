@@ -8,6 +8,7 @@ public class ItemMenuManager : Singleton<ItemMenuManager>
     private Transform pickupPanel;
     private Transform lockedPanel;
     private Transform usePanel;
+    private List<Text> textList;
 
     public enum ItemMenuType
     {
@@ -21,6 +22,15 @@ public class ItemMenuManager : Singleton<ItemMenuManager>
         pickupPanel = transform.Find("PickupPanel");
         lockedPanel = transform.Find("LockedPanel");
         usePanel = transform.Find("UsePanel");
+
+        textList = new List<Text>
+        {
+            pickupPanel.Find("Text").GetComponent<Text>(),
+            lockedPanel.Find("Text").GetComponent<Text>(),
+            usePanel.Find("Function 1").GetComponent<Text>(),
+            usePanel.Find("Function 2").GetComponent<Text>(),
+            usePanel.Find("Exit").GetComponent<Text>()
+        };
     }
 
     public void ToggleDisplay(ItemMenuType type, bool turnOn)
@@ -65,6 +75,33 @@ public class ItemMenuManager : Singleton<ItemMenuManager>
                     usePanel.Find("Function 2").gameObject.SetActive(true);
                 }
                 break;
+        }
+    }
+
+    public void UpdateMenu(InteractiveObjectUI ui)
+    {
+        pickupPanel.Find("Text").GetComponent<Text>().text = ui.pickupText;
+        lockedPanel.Find("Text").GetComponent<Text>().text = ui.lockText;
+        usePanel.Find("Function 1").GetComponent<Text>().text = ui.useText;
+        usePanel.Find("Function 2").GetComponent<Text>().text = ui.useText2;
+        usePanel.Find("Exit").GetComponent<Text>().text = ui.exitText;
+        
+        foreach (Text text in textList)
+        {
+            text.gameObject.SetActive(text.text != "");
+        }
+
+        if (!ui.directUse)
+        {
+            ToggleDisplay(ItemMenuType.PickupPanel, !ui.isLocked && !ui.isUsing);
+            ToggleDisplay(ItemMenuType.UsePanel, ui.isUsing);
+            ToggleDisplay(ItemMenuType.LockedPanel, ui.isLocked);
+        }
+        else
+        {
+            ToggleDisplay(ItemMenuType.PickupPanel, true);
+            ToggleDisplay(ItemMenuType.LockedPanel, false);
+            ToggleDisplay(ItemMenuType.UsePanel, false);
         }
     }
 }
