@@ -14,5 +14,4 @@ public class InteractiveObjectUI : ScriptableObject
     public bool directUse;
     public bool isUsing;
     public bool isLocked;
-    
 }

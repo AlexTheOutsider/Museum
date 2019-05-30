@@ -74,7 +74,7 @@ public class Projector : MonoBehaviour
 		MusicManager.Instance.GetComponent<AudioSource>().loop = true;
 		MusicManager.Instance.playMusic(music);
 		
-		doorBalcony.UnlockDoor();
+		//doorBalcony.UnlockDoor();
 		//EventManager.Instance.TriggerEvent("DoorUnlock");
 	}
 

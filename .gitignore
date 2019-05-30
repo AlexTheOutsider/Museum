@@ -35,3 +35,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 .idea/
+Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
